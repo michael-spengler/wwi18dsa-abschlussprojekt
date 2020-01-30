@@ -9,4 +9,11 @@ export class AppController {
   getHello(): string {
     return this.appService.getHello();
   }
+
+  @Get('/getCities')
+  getCities(): any[] {
+    console.log('Ich habe einen request erhalten');
+    return this.appService.getCities();
+  }
+
 }
