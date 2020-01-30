@@ -15,5 +15,4 @@ export class AppController {
     console.log('Ich habe einen request erhalten');
     return this.appService.getCities();
   }
-
 }
